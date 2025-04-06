@@ -4,9 +4,10 @@
   <meta name="robots" content="noindex">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>100terres.com - Public Keys</title>
+  <title>100terres.com Public Keys</title>
 
   <style>
+    /** reset:start */
     *, *::before, *::after {
       box-sizing: border-box;
     }
@@ -24,7 +25,6 @@
     body {
       line-height: 1.5;
       -webkit-font-smoothing: antialiased;
-      font-family: Tahoma, Arial, sans-serif;
     }
 
     img, picture, video, canvas, svg {
@@ -47,42 +47,63 @@
     h1, h2, h3, h4, h5, h6 {
       text-wrap: balance;
     }
+    /** reset:end */
+
+    :root {
+      font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+      color-scheme: light dark;
+    }
+
+    body {
+      margin: 1rem 2rem;
+    }
+
+    main {
+      margin: 1rem 0;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
   </style>
 </head>
 <body>
+  <header>
+    <h1>100terres.com Public Keys</h1>
+  </header>
   <main>
-    <h1>100terres.com - Public Keys</h1>
+    <section>
+      <h2>Where to find them?</h2>
 
-    <h2>Where to found my public keys</h2>
+      <p>You can find them in many places. See below.</p>
 
-    <p>You can find them in many places.</p>
+      <h3>gab at [root domain]</h3>
 
-    <h3>gab at [root domain]</h3>
+      <p>openpgp4fpr:E933CA5706C6F265F23502A30B2A5271FC172325</p>
 
-    <p>openpgp4fpr:E933CA5706C6F265F23502A30B2A5271FC172325</p>
-
-    <ul>
-      <li>
-        <a href="https://github.com/100terres/openpgpkey.100terres.com/blob/main/keys/E933CA5706C6F265F23502A30B2A5271FC172325.asc">GitHub Repository</a>
-      </li>
-      <li>
-        <a href="https://openpgpkey.100terres.com/.well-known/openpgpkey/100terres.com/hu/egzrnrd9pdn9p1hdnhmbj76xr7iospm1">Web Key Directory</a>
-        (Hosted on Cloudflare infrasturcture)
-      </li>
-      <li>
-        <a href="https://keys.openpgp.org/search?q=E933CA5706C6F265F23502A30B2A5271FC172325">keys.openpgp.org</a>
-      </li>
-      <li>
-        <a href="https://keyserver.ubuntu.com/pks/lookup?search=E933CA5706C6F265F23502A30B2A5271FC172325&fingerprint=on&op=index">keyserver.ubuntu.com</a>
-      </li>
-      <li>
-        <a href="https://keys.mailvelope.com/pks/lookup?op=get&search=E933CA5706C6F265F23502A30B2A5271FC172325">keys.mailvelope.com</a>
-      </li>
-      <li>
-        <a href="https://mail-api.proton.me/pks/lookup?op=get&search=[email]">Proton Mail</a>
-        (replace [email] with my email)
-      </li>
-    </ul>
+      <ul>
+        <li>
+          <a href="https://github.com/100terres/openpgpkey.100terres.com/blob/main/keys/E933CA5706C6F265F23502A30B2A5271FC172325.asc">GitHub Repository</a>
+        </li>
+        <li>
+          <a href="https://openpgpkey.100terres.com/.well-known/openpgpkey/100terres.com/hu/egzrnrd9pdn9p1hdnhmbj76xr7iospm1">Web Key Directory</a>
+          (Hosted on Cloudflare)
+        </li>
+        <li>
+          <a href="https://keys.openpgp.org/search?q=E933CA5706C6F265F23502A30B2A5271FC172325">keys.openpgp.org</a>
+        </li>
+        <li>
+          <a href="https://keyserver.ubuntu.com/pks/lookup?search=E933CA5706C6F265F23502A30B2A5271FC172325&fingerprint=on&op=index">keyserver.ubuntu.com</a>
+        </li>
+        <li>
+          <a href="https://keys.mailvelope.com/pks/lookup?op=get&search=E933CA5706C6F265F23502A30B2A5271FC172325">keys.mailvelope.com</a>
+        </li>
+        <li>
+          <a href="https://mail-api.proton.me/pks/lookup?op=get&search=[email]">Proton Mail</a>
+          (replace <code>[email]</code> in the URL)
+        </li>
+      </ul>
+    </section>
   </main>
   <footer>
     <a href="https://github.com/100terres/openpgpkey.100terres.com">Source code</a>
