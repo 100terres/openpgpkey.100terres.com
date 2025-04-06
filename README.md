@@ -6,7 +6,7 @@ You can find them in many places.
 
 ### gab at [root domain]
 
-Fingerprint: E933CA5706C6F265F23502A30B2A5271FC172325
+openpgp4fpr:E933CA5706C6F265F23502A30B2A5271FC172325
 
 - [Web Key Directory](https://openpgpkey.100terres.com/.well-known/openpgpkey/100terres.com/hu/egzrnrd9pdn9p1hdnhmbj76xr7iospm1) (Hosted on Cloudflare infrasturcture)
 - [keys.openpgp.org](https://keys.openpgp.org/search?q=E933CA5706C6F265F23502A30B2A5271FC172325)
