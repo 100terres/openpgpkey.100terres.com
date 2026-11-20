@@ -1,0 +1,17 @@
+[general]
+port = 80
+root = "/var/public"
+ignore-hidden-files = false # Serve /.well-known (SWS hides dotfiles by default)
+directory-listing = false
+health = true
+
+[[advanced.headers]]
+source = "/.well-known/openpgpkey/**"
+[advanced.headers.headers]
+Access-Control-Allow-Origin = "*"
+X-Content-Type-Options = "nosniff"
+Cache-Control = "no-store"
+
+[[advanced.headers]]
+source = "/.well-known/openpgpkey/*/hu/*"
+headers = { Content-Type = "application/octet-stream" }

@@ -13,12 +13,14 @@ COPY . .
 RUN cp -r public dist && rm dist/index.html
 RUN minify -o dist/index.html public/index.html
 
-FROM ghcr.io/static-web-server/static-web-server:2-alpine
+FROM ghcr.io/static-web-server/static-web-server:2.44.3-alpine
 
 USER root
 RUN apk add --no-cache curl
 
 USER $SERVER_USER_NAME:$SERVER_GROUP_NAME
 COPY --from=builder /app/dist /var/public
+COPY sws.toml /etc/sws.toml
+ENV SERVER_CONFIG_FILE=/etc/sws.toml
 
 EXPOSE 80
